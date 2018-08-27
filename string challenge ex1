@@ -1,0 +1,6 @@
+mystring = "abcdef"
+print(mystring)
+print(mystring[0:4])
+print(mystring[0:6:2])
+print(mystring[-1:-7:-1])
+print(mystring[0:-2])
