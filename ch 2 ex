@@ -1,0 +1,23 @@
+a = "all"
+w = " work"
+nd = " and"
+n = " no"
+p = " play"
+m = " makes"
+j = " jack"
+aa = " a"
+d = " dull"
+b = " boy"
+print(a+ w+ nd+ n+ p+ m+ j+ aa+ d+ b)
+
+
+
+p = (10000)
+n= (12)
+r = (0.08)
+t = int(input("how many years do you want compounded?"))
+print ((p*(1+r/n)**t))
+
+time = 2
+alarm = 51
+print((time+alarm)%24)
