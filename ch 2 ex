@@ -21,3 +21,10 @@ print ((p*(1+r/n)**t))
 time = 2
 alarm = 51
 print((time+alarm)%24)
+
+
+timenow = int(input("what time is it now? (24hour)"))
+alarm = int(input("How long do you want to wait? (hours)"))
+alarmtime = (alarm+timenow)
+futuretime= (alarmtime%24)
+print("the alarm will go off at ",futuretime)
