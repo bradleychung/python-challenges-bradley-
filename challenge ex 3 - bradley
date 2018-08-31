@@ -1,0 +1,113 @@
+for i in range(1000):
+    print("We like Python's turtles!")
+    
+    
+for m in ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]:
+    print("One of the months of the year is ", m)
+    
+    
+for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    print(xs)
+    
+for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    print(xs**2)
+    
+    
+total = 0
+for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    total= total+xs    
+print(total)
+
+
+total = 1
+for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
+    total = (xs*total)
+print(total)
+
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+ 
+for i in range(3):
+     alex.forward(80)
+     alex.left(120)
+     
+     
+     import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+ 
+for i in range(4):
+     alex.forward(80)
+     alex.left(90)
+     
+     
+     import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+ 
+for i in range(6):
+     alex.forward(80)
+     alex.left(60)
+     
+     
+     import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+ 
+for i in range(8):
+     alex.forward(80)
+     alex.left(45)
+     
+     
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+pirate = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+
+for i in pirate:
+     alex.forward(100)
+     alex.right(i)
+     
+     
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+heading= 0 
+pirate = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+
+for i in pirate:
+     alex.forward(100)
+     alex.right(i)
+     totalheading=(heading+i)
+     
+print(totalheading%360)
+
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+alex.left(36)
+for i in range(5):
+    alex.forward(300)
+    alex.left(144)
+
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.stamp()
+alex.penup()
+for i in range(12):
+    alex.forward(140)
+    alex.pendown()
+    alex.forward(30)
+    alex.penup()
+    alex.forward(30)
+    alex.stamp()
+    alex.left(180)
+    alex.forward(200)
+    alex.left(330)
