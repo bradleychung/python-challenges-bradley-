@@ -16,3 +16,23 @@ for i in range(5):
     
     
    
+import turtle
+bob = turtle.Turtle
+wn = turtle.Screen()
+turtle.speed(1)
+sz = 20
+
+def square (t,sz):
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.left(90)
+    turtle.penup()
+    for i in range(2):
+        turtle.right(90)
+        turtle.forward(10)
+    turtle.right(90)
+    turtle.pendown()
+
+for i in range(5):
+    square(bob,sz)
+    sz = sz + 20
