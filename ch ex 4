@@ -1,0 +1,18 @@
+import turtle
+wn = turtle.Screen()
+
+def square (t,sz):
+    for i in range(4):
+        turtle.forward(sz)
+        turtle.left(90)
+    turtle.penup()
+    turtle.forward(sz*2)
+    turtle.pendown()
+
+bob = turtle.Turtle
+for i in range(5):
+    square(bob,20)
+    
+    
+    
+   
