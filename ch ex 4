@@ -74,5 +74,33 @@ def square(t,sz):
 for i in range(20):
   square(bob,100)
 
+import turtle
+bob = turtle.Turtle()
+wn = turtle.Screen()
+turtle.speed(10)
 
 
+def spiral(t,sz):
+  for i in range(50):
+   turtle.right(90)
+   sz=sz+5
+   turtle.forward(sz)
+     
+spiral(bob,1)
+
+
+
+import turtle
+bob = turtle.Turtle()
+wn = turtle.Screen()
+turtle.speed(10)
+
+
+def spiral(t,sz):
+  for i in range(50):
+   angle=90+3
+   turtle.right(angle)
+   sz=sz+3
+   turtle.forward(sz)
+     
+spiral(bob,1)
