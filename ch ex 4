@@ -52,3 +52,27 @@ def drawpoly(t,n,sz):
         turtle.left(angle)
         
 drawpoly(bob,8,50)
+
+
+
+import turtle
+bob = turtle.Turtle()
+wn = turtle.Screen()
+turtle.speed(10)
+
+
+
+def square(t,sz):
+  for i in range(4):
+        turtle.forward(sz)
+        turtle.right(90)
+  bob.home()
+  angle=0
+  angle=angle+18
+  turtle.right(angle)
+
+for i in range(20):
+  square(bob,100)
+
+
+
