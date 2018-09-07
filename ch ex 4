@@ -104,3 +104,30 @@ def spiral(t,sz):
    turtle.forward(sz)
      
 spiral(bob,1)
+
+
+import turtle
+bob = turtle.Turtle()
+wn = turtle.Screen()
+turtle.speed(0)
+
+
+def drawpoly(t,n,sz):
+    for i in range(n):
+        turtle.forward(sz)
+        angle = 180-((n-2)*180)/n
+        turtle.left(angle)
+
+def triangle(t,n,sz):
+    drawpoly(t,n,sz)
+    
+triangle(bob,3,50)
+
+def sum_to(n):
+    end = 0
+    while n > 0:
+        end+=n
+        n=n-1
+    return(end)
+
+print(sum_to(10))
