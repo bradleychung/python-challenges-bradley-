@@ -139,3 +139,40 @@ def area_of_circle(r):
     return(area)
 
 print (area_of_circle(5))
+
+
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+def star(t,sz):
+    alex.left(36)
+    for i in range(5):
+        alex.forward(sz)
+        alex.left(144)
+        
+
+star(alex,100)
+
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+bob = turtle.Turtle()
+bob.pensize(2)
+bob.speed(5)
+sz = 5
+
+def drawstar(t,sz):
+    for i in range(5):
+        t.color("pink")
+        t.forward(100)
+        t.left(144)
+
+for i in range(5):
+    drawstar(bob,sz)
+    bob.penup()
+    bob.left(144)
+    bob.forward(350)
+    bob.pendown()
