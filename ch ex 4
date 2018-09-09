@@ -133,8 +133,9 @@ def sum_to(n):
 print(sum_to(10))
 
 
+pi=(22/7)
 def area_of_circle(r):
     area=(pi*(r**2))
     return(area)
 
-area_of_circle()
+print (area_of_circle(5))
