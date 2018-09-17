@@ -142,3 +142,63 @@ for a in xs:
     draw_bar(tess, a)
 
 tess.pensize(3)
+wn.mainloop()
+
+
+import turtle
+def draw_bar(t, height):
+
+    t.begin_fill()           
+    t.left(90)
+    t.forward(height)
+    if height < 0:
+        t.penup()
+        t.forward(-15)
+        t.write("  "+ str(height))
+        t.forward(15)
+        t.pendown()
+    else:
+        t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill()
+    t.penup()                
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle() 
+
+xs = [-48,117,200,240,160,260,220]
+
+for a in xs:
+    if a >=200:
+        tess.color("blue", "red")
+    elif a >=100 and a <=200:
+        tess.color("blue", "yellow")
+    elif a<100:
+        tess.color("blue", "green")
+    draw_bar(tess, a)
+
+tess.pensize(3)
+wn.mainloop()
+
+
+
+a = float(input("Please enter the length of one side of the triangle: "))
+b = float(input("Please enter the length of the other side of the triangle: "))
+
+def find_hypot(a,b):
+    hypot= (((a**2)+(b**2))**.5)
+    return hypot
+
+print("the length of the hypotenuse is",find_hypot(a,b))
+
+
+
+
