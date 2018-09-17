@@ -1,0 +1,144 @@
+n = int(input("Please enter the number of your day (0-6)"))
+
+if n == 0:
+    print("Sunday")
+elif n == 1:
+    print("Monday")
+elif n == 2:
+    print("Tuesday")
+elif n == 3:
+    print("Wednesday")
+elif n == 4:
+    print("Thursday")
+elif n == 5:
+    print("Friday")
+else:
+    print("Saturday")
+    
+    
+    
+    x=int(input("Please enter the number of your day (0-6)"))
+y=int(input("How long is your stay? (days)"))
+
+
+def day_of_the_week(n):
+    if n == 0:
+        print("Sunday")
+    elif n == 1:
+        print("Monday")
+    elif n == 2:
+        print("Tuesday")
+    elif n == 3:
+        print("Wednesday")
+    elif n == 4:
+        print("Thursday")
+    elif n == 5:
+        print("Friday")
+    else :
+        print("Saturday")
+        return
+
+n=(x+y) %7
+
+day_of_the_week(n), print("is the day of the week that you return")
+
+
+
+3 == 3 True
+3 != 3 False
+3 >= 4 False
+not (3 < 4) False
+
+
+def exam_mark(mark):
+    if mark >= 75:
+        print("First")
+    elif mark >= 70 and mark<=75:
+        print("Upper second")
+    elif mark >= 60 and mark<=70:
+        print("Second")
+    elif mark >= 50 and mark<=60:
+        print("Third")
+    elif mark >= 45 and mark<=50:
+        print("F1 Supp")
+    elif mark >= 40 and mark<=45:
+        print("F2")
+    else:
+        print("F3")
+
+xs = [83, 75, 74.9, 70, 69.9, 65, 60, 59.9, 55, 50,49.9, 45, 44.9, 40, 39.9, 2, 0]
+
+for mark in xs: 
+    exam_mark(mark)
+    
+    
+    
+    
+    import turtle
+def draw_bar(t, height):
+
+    t.begin_fill()           
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill() 
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()      
+tess.color("blue", "red")
+tess.pensize(3)
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+
+
+
+import turtle
+def draw_bar(t, height):
+
+    t.begin_fill()           
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill() 
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle() 
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    if a >=200:
+        tess.color("blue", "red")
+    elif a >=100 and a <=200:
+        tess.color("blue", "yellow")
+    elif a<100:
+        tess.color("blue", "green")
+    draw_bar(tess, a)
+
+tess.pensize(3)
