@@ -202,3 +202,39 @@ print("the length of the hypotenuse is",find_hypot(a,b))
 
 
 
+a = float(input("Please enter the length of one side of the triangle: "))
+b = float(input("Please enter the second length of the triangle: "))
+c = float(input("Please enter the length of the third side (longest): "))
+
+
+def is_rightangled(a,b,c):
+  if a**2 + b**2 == c**2:
+    print("true")
+  else:
+    print ("false")
+
+
+is_rightangled(a,b,c)
+
+
+
+
+
+
+a = float(input("Please enter the length of one side of the triangle: "))
+b = float(input("Please enter the second length of the triangle: "))
+c = float(input("Please enter the length of the third side: "))
+
+
+def is_rightangled(a,b,c):
+  if a**2 + b**2 == c**2:
+    print("true")
+  elif c**2 + b**2 == a**2:
+    print("true")
+  elif c**2 + a**2 == b**2:
+    print("true")
+  else:
+    print ("false")
+
+
+is_rightangled(a,b,c)
