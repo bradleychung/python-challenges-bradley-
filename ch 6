@@ -1,0 +1,72 @@
+EXERCISE 1:
+
+def turn_clockwise (p):
+    if p=="N" or p=="n":
+        return "E"
+    elif p=="E" or p=="e":
+        return "S"
+    elif p=="S" or p=="s":
+        return "W"
+    elif p=="W" or p=="w":
+        return "N"
+
+print(turn_clockwise("s"))
+
+EXERCISE 2:
+
+def day_name (n):
+    if n=="0":
+        return "Sunday"
+    elif n=="1":
+        return "Monday"
+    elif n=="2":
+        return "Tuesday"
+    elif n=="3":
+        return "Wednesday"
+    elif n=="4":
+        return "Thursday"
+    elif n=="5":
+        return "Friday"
+    elif n=="6":
+        return "Saturday"
+    else:
+        return
+print(day_name("3"))
+
+EXERCISE 3:
+
+def day_num (d):
+    if d=="sunday":
+        return 0
+    elif d=="monday":
+        return 1
+    elif d=="tuesday":
+        return 2
+    elif d=="wednesday":
+        return 3
+    elif d=="thursday":
+        return 4
+    elif d=="friday":
+        return 5
+    elif d=="saturday":
+        return 6
+    else:
+        return
+print(day_num("monday"))
+
+EXERCISE 4:
+
+sunday=0
+monday=1
+tuesday=2
+wednesday=3 
+thursday=4
+friday=5
+saturday=6
+
+
+def day_add(d,h):
+    return_day=(d+h)%7
+    
+day_add(monday,5) return return_day
+
