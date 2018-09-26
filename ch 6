@@ -56,17 +56,67 @@ print(day_num("monday"))
 
 EXERCISE 4:
 
-sunday=0
-monday=1
-tuesday=2
-wednesday=3 
-thursday=4
-friday=5
-saturday=6
+sunday = 0
+monday = 1
+tuesday = 2
+wednesday = 3
+thursday = 4
+friday = 5
+saturday = 6
+
+def day_add(d, h):
+    return_day = (d + h) % 7
+    if return_day == 0:
+        print ("Sunday")
+    elif return_day == 1:
+        print ("Monday")
+    elif return_day == 2:
+        print ("Tuesday")
+    elif return_day == 3:
+        print ("Wednesday")
+    elif return_day == 4:
+        print ("Thursday")
+    elif return_day == 5:
+        print ("Friday")
+    elif return_day == 6:
+        print ("Saturday")
+    else:
+      return
 
 
-def day_add(d,h):
-    return_day=(d+h)%7
-    
-day_add(monday,5) return return_day
+day_add(monday, 8)
+
+EXERCISE 5:
+
+sunday = 0
+monday = 1
+tuesday = 2
+wednesday = 3
+thursday = 4
+friday = 5
+saturday = 6
+
+def day_add(d, h):
+    return_day = (d + h) % 7
+    if return_day == 0:
+        print ("Sunday")
+    elif return_day == 1:
+        print ("Monday")
+    elif return_day == 2:
+        print ("Tuesday")
+    elif return_day == 3:
+        print ("Wednesday")
+    elif return_day == 4:
+        print ("Thursday")
+    elif return_day == 5:
+        print ("Friday")
+    elif return_day == 6:
+        print ("Saturday")
+    else:
+      return
+
+
+
+
+day_add(monday, -4)
 
