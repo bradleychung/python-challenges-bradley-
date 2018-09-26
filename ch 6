@@ -120,3 +120,47 @@ def day_add(d, h):
 
 day_add(monday, -4)
 
+
+EXERCISE 6:
+
+m=input("what month?")
+
+
+def days_in_month (m):
+    if m== "january":
+      print(m, "has 31 days")
+    elif m== "february":
+      print(m, "has 28 days")
+    elif m== "march":
+      print(m, "has 31 days")
+    elif m== "april":
+      print(m, "has 30 days")
+    elif m== "may":
+      print(m, "has 31 days")
+    elif m== "june":
+      print(m, "has 30 days")
+    elif m== "july":
+      print(m, "has 31 days")
+    elif m== "august":
+      print(m, "has 31 days")
+    elif m== "september":
+      print(m, "has 30 days")
+    elif m== "october":
+      print(m, "has 31 days")
+    elif m== "november":
+      print(m, "has 30 days")
+    elif m== "december":
+      print(m, "has 31 days")
+    else:
+      return
+
+days_in_month(m)
+
+
+EXERCISE 7:
+
+def to_secs(h,m,s):
+  sec= ((h/60)/60)+(m/60)+s
+  print(sec)
+
+to_secs(3,45,13)
