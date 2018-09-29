@@ -160,7 +160,105 @@ days_in_month(m)
 EXERCISE 7:
 
 def to_secs(h,m,s):
-  sec= ((h/60)/60)+(m/60)+s
-  print(sec)
+   print((h*3600)+(m*60)+s, "seconds")
+ 
 
 to_secs(3,45,13)
+
+
+EXERCISE 8:
+
+def to_secs(h,m,s):
+   print(int((h*3600)+(m*60)+s), "seconds")
+  
+
+
+to_secs(2.5,0,10.71)
+
+EXERCISE 9:
+
+def hours_in(s):
+   print(int(s/3600))
+  
+
+
+hours_in(9010)
+
+
+def minutes_in(s):
+   print(int((s%3600)/60))
+  
+
+
+minutes_in(9010)
+
+def seconds_in(s):
+   print(int((s%3600)%60))
+  
+
+
+seconds_in(9010)
+
+
+EXERCISE 10:
+
+test(3 % 4 == 0) false
+test(3 % 4 == 3) true
+test(3 / 4 == 0) false
+test(3 // 4 == 0) true
+test(3+4  *  2 == 14) false
+test(4-2+2 == 0) true
+test(len("hello, world!") == 13) true
+
+EXERCISE 12:
+
+def hypotenuse(a,b):
+    print(((a**2)+(b**2))**.5)
+    
+hypotenuse(3,4)
+
+EXERCISE 13:
+
+def slope(x1, y1, x2, y2):
+    y = float(y2 - y1)
+    x = float(x2 - x1)
+    yx = float(y / x)
+    print (yx)
+
+slope(5, 3, 4, 2)
+    
+EXERCISE 14:
+
+def is_even(n):
+    if n%2 == 1:
+        print("false")
+    elif n%2 == 0:
+        print("true")
+    else:
+        print("invalid number")
+
+is_even(6)
+
+EXERCISE 15
+
+def is_odd(n):
+    if n%2 == 1:
+        print("true")
+    elif n%2 == 0:
+        print("false")
+    else:
+        print("invalid number")
+
+is_odd(6)
+
+EXERCISE 16
+
+def is_factor(f, n):
+    if n % f == 0:
+        print ("true")
+    elif n % f != 0:
+        print ("false")
+
+is_factor(3, 12)
+
+
