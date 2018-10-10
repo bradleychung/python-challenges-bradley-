@@ -58,3 +58,13 @@ for x in numbers:
 print(total)
 
 EX 6
+names = ("ben","dom","harry","sam","seth") 
+count=0
+total=0
+for x in names:
+    if x%2==0 and count==0:
+        count=1
+    else:
+        total+=x
+        
+print(total)
