@@ -111,4 +111,30 @@ def is_prime(n):
     
 is_prime(4)
 
+EX 11
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
 
+move = [(160, 20), (-43, 10), (270, 8), (-43, 12)]
+
+def pirate(move):
+    for angle,steps in move:
+        alex.forward(steps)
+        alex.right(angle)
+    
+pirate(move)
+
+EX 16
+xs = [2, 3, 4]
+
+def sum_of_squares(xs):
+    sum_of_squares=0 
+    for i in (xs):
+        squared = i * i 
+        sum_of_squares += squared
+    return sum_of_squares
+
+print (sum_of_squares(xs))
+
+sum_of_squares([2, 3, 4])
