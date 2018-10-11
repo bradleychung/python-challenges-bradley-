@@ -1,0 +1,81 @@
+EX 1
+
+>>> "Python"[1]
+y
+>>> "Strings are sequences of characters."[5]
+g
+>>> len("wonderful")
+9
+>>> "Mystery"[:4]
+Myst
+>>> "p" in "Pineapple"
+true
+>>> "apple" in "Pineapple"
+true
+>>> "pear" not in "Pineapple"
+true
+>>> "apple" > "pineapple"
+false
+>>> "pineapple" < "Peach"
+false
+
+EX 2
+
+prefixes = "JKLMNOPQ"
+suffix = "ack"
+
+for letter in prefixes:
+    if letter == "Q" or letter=="O":
+        print(letter +"u"+ suffix)
+    else:
+        print(letter + suffix)
+        
+EX 3
+
+def count_letters(fruit, letter):
+    count = 0
+    for char in fruit:
+        if char == letter:
+            count += 1
+    print (count)
+ 
+count_letters("banana", "a")
+
+EX 4
+def count_letters(fruit, letter, start):
+    index = start
+    while index < len(fruit):
+        if fruit[index] == letter:
+            print(index)
+        index += 1
+    return -1
+
+count_letters( "banana" , "a" , 0 )
+
+EX 5
+import string
+
+punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+
+def remove_punctuation(s):
+    s_sans_punct = ""
+    for letter in s:
+        if letter not in punctuation:
+            s_sans_punct += letter
+    return s_sans_punct
+    
+def analysis(e):
+    count=0
+    letter=0
+    for words in e:
+        if words ==" ":
+            count+=1
+        else:
+            continue
+    for words in list(e):
+        if words=="e":
+            letter+=1
+        else:
+            continue
+    print ("Your text contains",count+1,"words, of which",letter,'contain the letter "e"')
+    
