@@ -97,7 +97,7 @@ EX 7
 
 def reverse(n):
     reverse= n[::-1]
-    print(reverse)
+    return reverse
 
     
 reverse("hola")
@@ -117,4 +117,33 @@ def remove(l,s):
         return s
     else: 
         for i in s:
-            if
+            if i != l:
+                t += i
+        return t
+
+print(remove("a","apple"))
+
+EX 10
+
+def reverse(n):
+    reverse= n[::-1]
+    return reverse
+    
+def is_palindrome(s):
+    if s == reverse(s):
+        return True
+    else:
+        return False
+
+print(is_palindrome("bob")
+
+EX 11
+def count(st, sub):
+    counter = 0
+    for i in range(len(st)):
+        for j in range(len(st)):
+            if st[i:j+1] == sub:
+                counter +=1
+    return counter
+
+print(count("banana","an"))
