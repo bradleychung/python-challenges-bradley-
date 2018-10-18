@@ -147,3 +147,13 @@ def count(st, sub):
     return counter
 
 print(count("banana","an"))
+
+EX 12
+
+not sure how to do :(
+
+EX13
+def remove_all(c, s):
+    return s.replace(c,"")
+    
+print(remove_all("an","banana"))
