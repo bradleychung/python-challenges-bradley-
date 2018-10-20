@@ -1,0 +1,18 @@
+#EX 1
+tup = ("bob ", "is ", "69")
+
+def about(t):
+    det= ""
+    for i in t:
+        det+=i
+    return det
+
+print(about(tup))
+
+# Si senor it is possible for tuples to be used as arguments in a function
+
+#EX 2
+# A pair is a generalisation of a tuple because a pair can be a tuple however not all tuples are pairs
+
+#EX 3
+# A pair is a type of tuple :)
