@@ -1,0 +1,66 @@
+#EX 1
+
+import turtle
+
+turtle.setup(400,500)                
+wn = turtle.Screen()                
+wn.title("Handling keypresses!")    
+wn.bgcolor("lightgreen")           
+tess = turtle.Turtle()             
+
+
+def h1():
+   tess.forward(30)
+
+def h2():
+   tess.left(45)
+
+def h3():
+   tess.right(45)
+
+def h4():
+    wn.bye()                        
+
+def h5():
+    tess.color("red")
+
+def h6():
+    tess.color("green")
+
+def h7():
+    tess.color("blue")
+    
+def h8():
+    sz=tess.width()
+    if sz<20:
+        tess.width(sz+1)
+    
+
+def h9():
+    sz=tess.width()
+    if sz>1:
+        tess.width(sz-1)
+    
+def h10():
+    tess.penup()
+
+def h11():
+    tess.pendown()
+    
+wn.onkey(h1, "Up")
+wn.onkey(h2, "Left")
+wn.onkey(h3, "Right")
+wn.onkey(h4, "q")
+wn.onkey(h5, "r")
+wn.onkey(h6, "g")
+wn.onkey(h7, "b")
+wn.onkey(h8, "+")
+wn.onkey(h9, "-")
+wn.onkey(h10, "u")
+wn.onkey(h11, "d")
+
+wn.listen()
+wn.mainloop()
+
+
+#EX 2
