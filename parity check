@@ -1,0 +1,11 @@
+byte= ["10011001", "11010100", "10111010"]
+
+def paritycheck(byte):
+    count=0
+    for i in byte:
+        if i == "1":
+            count+=1
+        else:
+            continue
+    if count%2==0:
+        print(
