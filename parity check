@@ -1,7 +1,8 @@
-byte= ["1001100", "1101010", "1011101"]
+byte= ["1001100", "1101010", "1011101","0010111","0101011","1010110","0011011","1011101"]
 
 def paritycheck(byte):
     count=0
+    List = []
     for i in byte:
         for a in i:
             if (a) == "1":
@@ -9,14 +10,16 @@ def paritycheck(byte):
             else:
                 continue
         if count%2==0:
+            List+=i+"0",
             print("the parity bit is 0, for", i, "=",i+"0")
         else:
+            List+=i+"1",
             print("the parity bit is 1 for", i, "=",i+"1")
         count = 0   
+    print(List)
 
 paritycheck(byte)
 
-List = []
 
 
     
