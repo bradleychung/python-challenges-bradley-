@@ -1,3 +1,5 @@
+EX 1
+
 import turtle
 wn = turtle.Screen()
 
@@ -14,7 +16,7 @@ for i in range(5):
     square(bob,20)
     
     
-    
+EX 2    
    
 import turtle
 bob = turtle.Turtle
@@ -37,7 +39,7 @@ for i in range(5):
     square(bob,sz)
     sz = sz + 20
     
-    
+EX 3    
     
     import turtle
 bob = turtle.Turtle
@@ -53,7 +55,7 @@ def drawpoly(t,n,sz):
         
 drawpoly(bob,8,50)
 
-
+EX 4
 
 import turtle
 bob = turtle.Turtle()
@@ -74,6 +76,8 @@ def square(t,sz):
 for i in range(20):
   square(bob,100)
 
+EX 5
+
 import turtle
 bob = turtle.Turtle()
 wn = turtle.Screen()
@@ -88,7 +92,7 @@ def spiral(t,sz):
      
 spiral(bob,1)
 
-
+EX 6
 
 import turtle
 bob = turtle.Turtle()
@@ -105,6 +109,7 @@ def spiral(t,sz):
      
 spiral(bob,1)
 
+EX 7
 
 import turtle
 bob = turtle.Turtle()
@@ -140,7 +145,7 @@ def area_of_circle(r):
 
 print (area_of_circle(5))
 
-
+EX 8
 
 import turtle
 wn = turtle.Screen()
@@ -155,6 +160,7 @@ def star(t,sz):
 
 star(alex,100)
 
+EX 9
 
 import turtle
 wn = turtle.Screen()
