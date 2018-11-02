@@ -328,13 +328,16 @@ wn.ontimer(advance_state_machine, 500)
 wn.listen()                    
 wn.mainloop()
 
+
+
 #EX 5
+
 import turtle           # Tess becomes a traffic light.
 
 turtle.setup(400,500)
 wn = turtle.Screen()
 wn.title("Tess becomes a traffic light!")
-wn.bgcolor("lightgreen")
+wn.bgcolor("white")
 tess = turtle.Turtle()
 bob = turtle.Turtle()
 tim = turtle.Turtle()
@@ -368,24 +371,28 @@ def advance_state_machine():
     if state_num == 0:       # Transition from state 0 to state 1
         tess.fillcolor("darkred")
         tim.fillcolor("darkorange")
-        bob.fillcolor("green")
+        bob.fillcolor("lightgreen")
         state_num = 1
+        wn.ontimer(advance_state_machine, 3000)
     elif state_num == 1:     # Transition from state 1 to state 2
         tess.fillcolor("darkred")
-        tim.fillcolor("orange")
-        bob.fillcolor("green")
+        tim.fillcolor("yellow")
+        bob.fillcolor("lightgreen")
         state_num = 2
+        wn.ontimer(advance_state_machine, 1000)
     elif state_num == 2:     # Transition from state 1 to state 2
         tess.fillcolor("darkred")
-        tim.fillcolor("orange")
+        tim.fillcolor("yellow")
         bob.fillcolor("darkgreen")
         state_num = 3
+        wn.ontimer(advance_state_machine, 1000)
     else:                    # Transition from state 2 to state 0
         tess.fillcolor("red")
         tim.fillcolor("darkorange")
         bob.fillcolor("darkgreen")
         state_num = 0
-    wn.ontimer(advance_state_machine, 500)
+        wn.ontimer(advance_state_machine, 2000)
+    
 
 bob.penup()
 bob.forward(40)
@@ -401,7 +408,7 @@ tim.left(90)
 tim.forward(120)
 tim.shape("circle")
 tim.shapesize(3)
-tim.fillcolor("orange")
+tim.fillcolor("yellow")
 
 tess.penup()
 tess.forward(40)
@@ -423,8 +430,11 @@ def red():
 def green():
     tim.fillcolor("green")
     
+wn.ontimer(advance_state_machine, 100)
 
-wn.ontimer(advance_state_machine, 500)
 
 wn.listen()                    
 wn.mainloop()
+
+#EX 6
+
