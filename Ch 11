@@ -1,0 +1,23 @@
+#EX 1
+print(list(range(10, 0, -2)))
+result: [10, 8, 6, 4, 2]
+
+#EX 2
+import turtle
+
+tess = turtle.Turtle()
+alex = tess
+alex.color("hotpink")
+
+#this does not create a seperate turtle as alex and tess equal the same variable, therefore changing alex's colour also changes tess' colour
+
+#EX 3
+a = [1, 2, 3]
+b = a[:]
+b[0] = 5
+
+#before the 3rd line of code, a = [1, 2, 3] and b = [1, 2, 3]
+#after the 3rd line of code, a = [1, 2, 3] and b = [5, 2, 3]
+
+#EX 4
+
