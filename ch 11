@@ -31,3 +31,65 @@ print("Test 2: {0}".format(this is that))
 #this is because even though the values have the same values, the statement is not true until "that" is equated to "this" (that=this)
 
 
+#EX 5
+
+def add_vectors(u,v):
+    vector=[]
+    for i in range(len(u)):
+        vector.append(u[i]+v[i])
+    print(vector)
+    
+add_vectors([1, 2, 1], [1, 4, 3])
+
+
+#EX 6
+
+def scalar_mult(s,v):
+    scalarvector=[]
+    for i in range(len(v)):
+        scalarvector.append(s*v[i])
+    print(scalarvector)
+    
+scalar_mult(7, [3, 0, 5, 11, 2])
+
+
+
+#EX 7
+
+def dot_product(u,v):
+    product=0
+    for i in range(len(u)):
+        product+=(u[i]*v[i])
+    print(product)
+    
+dot_product([1, 2], [1, 4])
+
+
+#EX 9
+
+song = "The rain in Spain..."
+print(" ".join(song.split()))
+
+#The split command splits the string into a list of each word, however the join command just cancels that action by joining each word by " " (a space)
+
+
+#EX 10
+
+def replace(s, old, new):
+    s = new.join(s.split(old))
+    print(s)
+    
+
+s = "I love spom! Spom is my favorite food. Spom, spom, yum!"
+
+replace(s, "om", "am")
+
+
+
+
+
+
+
+
+
+
