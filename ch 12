@@ -1,2 +1,40 @@
 #EX 1
 
+#a)
+import calendar
+cal = calendar.TextCalendar()      
+cal.pryear(2012)
+
+#b)
+cal = calendar.TextCalendar(3)
+cal.pryear(2012)
+
+#c) 
+
+import calendar
+
+cal = calendar.TextCalendar()
+def birthday (birthmonth):
+    cal.prmonth(2018,birthmonth)
+    
+birthday(10)
+
+#d)
+
+import calendar
+
+d = calendar.LocaleTextCalendar(6, "FRENCH")
+d.pryear(2012)
+
+import calendar
+
+d = calendar.LocaleTextCalendar(6, "MALAY")
+d.pryear(2012)
+
+#e)
+
+import calendar
+
+print(calendar.isleap(2018))
+#False
+
