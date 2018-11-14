@@ -38,3 +38,25 @@ import calendar
 print(calendar.isleap(2018))
 #False
 
+#EX 2
+
+#a)
+import math
+help(math)
+
+#There are 49 functions 
+
+#b)
+
+#ceil(x) returns the ceiling of x as an Integral. This is the smallest integer >= x.
+
+#floor(x) Return the floor of x as an Integral. This is the largest integer <= x.
+
+#c) Square root can be used without the math module by using **(.5)
+
+#d)     
+    #e = 2.718281828459045
+    #inf = inf
+    #nan = nan
+    #pi = 3.141592653589793
+    #tau = 6.283185307179586
