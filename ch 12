@@ -60,3 +60,10 @@ help(math)
     #nan = nan
     #pi = 3.141592653589793
     #tau = 6.283185307179586
+
+
+#EX 3
+# A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+
+#EX 4
+#
