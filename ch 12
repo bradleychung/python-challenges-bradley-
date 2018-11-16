@@ -66,4 +66,57 @@ help(math)
 # A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
 
 #EX 4
-#
+#mymodule1.py
+myage = 17
+year = 2018
+
+#mymodule2.py
+myage = 0
+year = 2001
+
+#namespace_test
+import mymodule1
+import mymodule2
+
+print((mymodule2.myage - mymodule1.myage) == (mymodule2.year - mymodule1.year))
+
+#EX 5
+
+#mymodule1.py
+myage = 17
+year = 2018
+print("My name is", __name__)
+
+#mymodule2.py
+myage = 0
+year = 2001
+print("My name is", __name__)
+
+#namespace_test
+import mymodule1
+import mymodule2
+
+print((mymodule2.myage - mymodule1.myage) == (mymodule2.year - mymodule1.year))
+
+if __name__ == "__main__":
+    print("This won't run if I'm  imported.")
+    
+#My name is mymodule1
+#My name is mymodule2
+#True
+#This won't run if I'm  imported.
+
+
+#EX 6
+import this
+#Namespaces are one honking great idea -- let's do more of those!
+
+#EX 7
+
+s = "If we took the bones out, it wouldn't be crunchy, would it?"
+print(s.split())
+print(type(s.split()))
+print(s.split("o"))
+print(s.split("i"))
+print("0".join(s.split("o")))
+
