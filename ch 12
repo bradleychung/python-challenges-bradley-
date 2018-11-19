@@ -120,3 +120,21 @@ print(s.split("o"))
 print(s.split("i"))
 print("0".join(s.split("o")))
 
+
+
+def myreplace(old, new, s):
+    if old == " ":
+        s = s.split()
+    else:
+        s = s.split(old)
+    print(new.join(s))
+
+myreplace("o", "a", s)
+
+#['If', 'we', 'took', 'the', 'bones', 'out,', 'it', "wouldn't", 'be', 'crunchy,', 'would', 'it?']
+#<class 'list'>
+#['If we t', '', 'k the b', 'nes ', 'ut, it w', "uldn't be crunchy, w", 'uld it?']
+#['If we took the bones out, ', "t wouldn't be crunchy, would ", 't?']
+#If we t00k the b0nes 0ut, it w0uldn't be crunchy, w0uld it?
+#If we taak the banes aut, it wauldn't be crunchy, wauld it?
+
