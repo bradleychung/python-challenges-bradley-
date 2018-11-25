@@ -1,0 +1,83 @@
+#EX 1
+
+#text.txt
+#hello
+#this is a text file lol
+#bye
+
+newfile = open("reverse.txt","w")
+
+line=[]
+readfile = open("text.txt","r")
+
+while True:
+    line_no = readfile.readline()
+    if len(line_no)== 0:
+        break
+    else:
+        line.append(line_no)
+
+for i in line[::-1]:
+    newfile.write(i)
+    
+newfile.close()
+
+
+#EX 2
+
+newfile = open("snake.txt","w")
+
+newfile.write("hello!\n")
+newfile.write("i was born in the year of the snake\n")
+newfile.write("however i hate snakes\n")
+newfile.write("that is all i wanted to say\n")
+newfile.write("goodbye")
+
+file = open("snakeV2.txt","w")
+
+line=[]
+readsnake= open("snake.txt","r")
+while True:
+    line_no = readsnake.readline()
+    if len(line_no)==0:
+        break
+    else:
+        line.append(line_no)
+
+
+for i in line:
+    if 'snake' in i:
+        file.write(i)
+
+file.close()
+
+
+#EX 3
+
+file = open("numberedlist.txt","w")
+
+line=[]
+readsnake= open("snake.txt","r")
+count=0
+
+while True:
+    count+=1
+    line_no = readsnake.readline()
+    if len(line_no)==0:
+        break
+    else:
+        line.append(str(count))
+        line.append(". ")
+        line.append(line_no)
+
+
+
+for i in line:
+    file.write(i)
+
+
+
+
+file.close()
+
+
