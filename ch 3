@@ -1,30 +1,34 @@
+#EX 1
+
 for i in range(1000):
     print("We like Python's turtles!")
     
-    
+#EX 2
+
 for m in ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]:
     print("One of the months of the year is ", m)
     
-    
+#EX 3    
 for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
     print(xs)
-    
+
+#EX 4
 for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
     print(xs**2)
     
-    
+#EX 5    
 total = 0
 for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
     total= total+xs    
 print(total)
 
-
+#EX 6
 total = 1
 for xs in [12, 10, 32, 3, 66, 17, 42, 99, 20]:
     total = (xs*total)
 print(total)
 
-
+#EX 7
 import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -33,6 +37,7 @@ for i in range(3):
      alex.forward(80)
      alex.left(120)
      
+#EX 8     
      
      import turtle
 wn = turtle.Screen()
@@ -42,7 +47,8 @@ for i in range(4):
      alex.forward(80)
      alex.left(90)
      
-     
+#EX 9
+
      import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -51,7 +57,8 @@ for i in range(6):
      alex.forward(80)
      alex.left(60)
      
-     
+#EX 10
+
      import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -60,7 +67,8 @@ for i in range(8):
      alex.forward(80)
      alex.left(45)
      
-     
+#EX 11
+
 import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -71,7 +79,8 @@ for i in pirate:
      alex.forward(100)
      alex.right(i)
      
-     
+#EX 12
+
 import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -86,6 +95,7 @@ for i in pirate:
 print(totalheading%360)
 
 
+#EX 13
 import turtle
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -95,6 +105,8 @@ for i in range(5):
     alex.forward(300)
     alex.left(144)
 
+
+#EX 14
 
 import turtle
 wn = turtle.Screen()
