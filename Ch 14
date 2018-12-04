@@ -160,4 +160,78 @@ def mirroriny(x):
     return (List)
  
  #c
+ def rotate90(x):
+    List = [0,0,0,0,0,0,0,0]
+    x_values = [0,1,2,3,4,5,6,7]
+    y_values = x.copy()
+    for i in range(0,8,1):
+        currentx = x_values[i]
+        currenty = y_values[i]
+        newy = currentx
+        newx = -(currenty) + 7
+        List.remove(0)
+        List.insert(newx,newy)
+    return List
+    
+    def rotate180(x):
+    w = rotate90(x)
+    return (rotate90(w))
+
+def rotate270(x):
+    List = [0,0,0,0,0,0,0,0]
+    x_values = [0,1,2,3,4,5,6,7]
+    y_values = x.copy()
+    for i in range(0,8,1):
+        currentx = x_values[i]
+        currenty = y_values[i]
+        newy = -currentx + 7
+        newx = currenty
+        List.remove(0)
+        List.insert(newx,newy)
+    return List
+    
+    #d
+    def symmetry(x):
+    List = []
+    List.append(x)
+    List.append(rotate90(x))
+    List.append(rotate180(x))
+    List.append(rotate270(x))
+    List.append(mirrorinx(x))
+    List.append(mirroriny(x))
+    w = rotate90(x)
+    List.append(mirrorinx(w))
+    List.append(mirroriny(w))
+
+
+    return List
+
+#EX 5
+#a
+import random
+
+def lottodraw():
+    List = []
+    for i in range(6):
+        List.append(random.randint(1,49))
+    print(List)
+    
+lottodraw()
+    
+#b
+def lottomatch(x,y):
+    count=0
+    for i in x:
+        for g in y:
+            if i==g:
+                count+=1
+    print(count)
+
+lottomatch([42,4,7,11,1,13], [2,5,7,11,13,17])
+
+#c
+
+
+
+
  
