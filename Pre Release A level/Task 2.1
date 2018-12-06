@@ -1,0 +1,20 @@
+thismonster = input("Enter Monster:")
+
+def find(search):
+    mon = open(search, "r")
+    count = 0
+    while True:
+        line = mon.readline()
+        linesplit = line.split(",")
+        for filemonster in linesplit:
+            if filemonster == thismonster:
+                count = 1
+                print("MONSTER FOUND")
+        if len(line)== 0:
+            print("MONSTER NOT FOUND")
+            break
+        elif count == 1:
+            break
+
+
+find("monster.txt")
