@@ -1,0 +1,45 @@
+monstercard = []
+
+name = input(str("What is the name of your monster?"))
+order = input(str("What is their origin?"))
+description = input(str("What is the monster's description?"))
+attack = input("Attack:")
+magforce = input("Magical Force:")
+magdef = input("Magical Defence:")
+defence = input("Defence:")
+intelligence = input("Intelligence:")
+health = input("Health:")
+exp = input("Experience:")
+
+
+def validate(info):
+    if 0< int(info) <31 :
+        monstercard.append(info)
+    else:
+        print("integer must be from 0-30!")
+
+
+def card():
+    monstercard.append(name)
+    monstercard.append(order)
+    monstercard.append(description)
+    validate(attack)
+    validate(magforce)
+    validate(magdef)
+    validate(defence)
+    validate(intelligence)
+    validate(health)
+    validate(exp)
+    print(monstercard)
+
+card()
+
+
+
+#monstercard.append(attack)
+#monstercard.append(magforce)
+#monstercard.append(magdef)
+#monstercard.append(defence)
+#monstercard.append(intelligence)
+#monstercard.append(health)
+#monstercard.append(exp)
