@@ -1,4 +1,3 @@
-
 def name():
     namelist=[]
     monsterfile=open("monster.txt", "r")
@@ -6,6 +5,7 @@ def name():
         item=line.split(",")
         namelist.append(item[1])
     del namelist[0]
-    print(namelist)
+    for i in namelist:
+        print(i)
 
 name()
