@@ -1,11 +1,32 @@
+# TASK 1.1
+namelist ← []
+monsterfile ← OPEN monster.txt to read
+FOR line IN monsterfile
+    item ← split at every comma ","
+    add the second value of "item" to "namelist"
+delete the first item in namelist
+FOR i IN namelist
+    OUTPUT i
+
+
+
+#create list where monster names will be added 
+#open monster text file to read
+#split each value in monster.txt at every ","
+#add the second value (the name) in each line to the name list
+#the first term is deleted as it is redundant
+#print monster names
+
+
+# TASK 1.2
 def name():
-    namelist=[]
-    monsterfile=open("monster.txt", "r")
-    for line in monsterfile:
-        item=line.split(",")
-        namelist.append(item[1])
-    del namelist[0]
+    namelist=[]                                         #create list where monster names will be added 
+    monsterfile=open("monster.txt", "r")                #open monster text file to read
+    for line in monsterfile: 
+        item=line.split(",")                            #split each value in monster.txt at every ","
+        namelist.append(item[1])                        #add the second value (the name) in each line to the name list
+    del namelist[0]                                     #the first term is deleted as it is redundant
     for i in namelist:
-        print(i)
+        print(i)                                        #print monster names
 
 name()
