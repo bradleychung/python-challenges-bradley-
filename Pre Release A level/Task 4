@@ -1,0 +1,60 @@
+#1
+ONECHAR("Tiger", 3)
+# returns the character: "g"
+
+#2
+CHARACTERCOUNT("Great Pyramid of Giza")
+# returns the integer: 20
+
+#3
+TONUM('3') + TONUM('29')
+# returns the integer: 32
+
+#Analyse the following code
+#4
+#p ← "The" & "Titanic"
+
+#q ← SUBSTR(p, 8, 4)
+q = "atit"
+
+#5
+#IDE ← "Integrated Development Environment"
+
+#Using the SUBSTR and/or ONECHAR functions, write expressions to return:
+
+#(a) "Integrated"
+
+SUBSTR(IDE, 1, 10)
+
+#(b) "Development"
+
+SUBSTR(IDE, 12, 22)
+
+#(c) "IDE"
+
+ONECHAR(1)
+ONECHAR(12)
+ONECHAR(24)
+
+
+#6
+#Use an ASCII code table to find the value for:
+
+#(a) (ASC('F') + 30) / 50
+
+#returns the integer: 2
+
+#(b) 2 * (ASC() + ASC('D'))
+
+#returns the integer: 136
+
+#7
+#Write the text string output by the following sequence of statements.
+
+#A ← "The answer is: "
+
+#B ← TOSTRING(42)
+
+#OUTPUT A & B
+
+#"The answer is: 42"
