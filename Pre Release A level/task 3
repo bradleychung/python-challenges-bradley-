@@ -1,45 +1,50 @@
-monstercard = []
-
-name = input(str("What is the name of your monster?"))
-order = input(str("What is their origin?"))
-description = input(str("What is the monster's description?"))
-attack = input("Attack:")
-magforce = input("Magical Force:")
-magdef = input("Magical Defence:")
-defence = input("Defence:")
-intelligence = input("Intelligence:")
-health = input("Health:")
-exp = input("Experience:")
-
-
-def validate(info):
-    if 0< int(info) <31 :
-        monstercard.append(info)
-    else:
-        print("integer must be from 0-30!")
+def validate(): #function used to validate and check if input is within range using while loop
+    while True:
+        info = input("Enter a value: ")
+        try:
+            if 0<int(info)<31 : #if input is valid pass
+                break
+            else:
+                print("Integer must be from 1-30!") #if input is invalid re-enter value
+        except ValueError:
+            print("Please enter a valid number from 1-30!") #if input is left blank or not an integer
+    return info
 
 
+#function used to create monster card
 def card():
-    monstercard.append(name)
-    monstercard.append(order)
-    monstercard.append(description)
-    validate(attack)
-    validate(magforce)
-    validate(magdef)
-    validate(defence)
-    validate(intelligence)
-    validate(health)
-    validate(exp)
-    print(monstercard)
+    name = input(str("What is the name of your monster?"))
+    origin = input(str("What is their origin?"))
+    description = input(str("What is the monster's description?"))
+    print("Attack:")
+    attack = validate()
+    print("Magical Force:")
+    magforce = validate()
+    print("Magical Defence:")
+    magdef = validate()
+    print("Defence:")
+    defence = validate()
+    print("Intelligence:")
+    intelligence = validate()
+    print("Health:")
+    health = validate()
+    print("Experience:")
+    exp = validate()
+#uses validate function to define correct values
+
+
+    print("Your Monstercard :\n")
+    print("Monster name:", name)
+    print("Monster origin:", origin)
+    print("Monster descrpition:", description,"\n")
+    print("Attack:", attack)
+    print("Magical Force:", magforce)
+    print("Magical Defence:", magdef)
+    print("Defence:", defence)
+    print("Intelligence:", intelligence)
+    print("Health:", health)
+    print("Experience:", exp)
+#if values are valid then the monster card is printed
+
 
 card()
-
-
-
-#monstercard.append(attack)
-#monstercard.append(magforce)
-#monstercard.append(magdef)
-#monstercard.append(defence)
-#monstercard.append(intelligence)
-#monstercard.append(health)
-#monstercard.append(exp)
