@@ -30,7 +30,7 @@ def card():
     health = validate()
     print("Experience:")
     exp = validate()
-#uses validate function to define correct values
+#use validate function to assign correct values
 
 
     print("Your Monstercard :\n")
