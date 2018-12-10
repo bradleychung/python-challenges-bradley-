@@ -15,7 +15,7 @@ TONUM('3') + TONUM('29')
 #p ← "The" & "Titanic"
 
 #q ← SUBSTR(p, 8, 4)
-q = "atit"
+q = "atiT"
 
 #5
 #IDE ← "Integrated Development Environment"
