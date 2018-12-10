@@ -4,7 +4,7 @@ ONECHAR("Tiger", 3)
 
 #2
 CHARACTERCOUNT("Great Pyramid of Giza")
-# returns the integer: 20
+# returns the integer: 21
 
 #3
 TONUM('3') + TONUM('29')
@@ -32,9 +32,9 @@ SUBSTR(IDE, 12, 22)
 
 #(c) "IDE"
 
-ONECHAR(1)
-ONECHAR(12)
-ONECHAR(24)
+ONECHAR(IDE,1)
+ONECHAR(IDE,12)
+ONECHAR(IDE,24)
 
 
 #6
